@@ -1,0 +1,39 @@
+# ===== Backend: Maven / Spring Boot =====
+backend/target/
+backend/*.log
+backend/.mvn/
+!backend/.mvn/wrapper/maven-wrapper.jar
+
+# ===== Frontend: Node / Vite =====
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.vite/
+
+# ===== Environment files (keep secrets out of git) =====
+.env
+.env.*
+*.env
+**/.env
+**/.env.*
+# ...but DO commit the template and the non-secret build configs.
+# (Vite VITE_* vars are bundled into the client, so they must never hold secrets.)
+!.env.example
+!**/.env.example
+!.env.production
+!**/.env.production
+!.env.development
+!**/.env.development
+
+# ===== IDEs / Editors =====
+.idea/
+*.iml
+.vscode/
+.DS_Store
+
+# ===== Logs =====
+*.log
+logs/
