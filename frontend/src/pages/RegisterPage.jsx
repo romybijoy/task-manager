@@ -183,6 +183,7 @@ const RegisterPage = () => {
             label="Full Name"
             value={form.fullName}
             onChange={handleChange}
+            required
             error={!!errors.fullName}
             helperText={errors.fullName}
             autoFocus
@@ -195,6 +196,7 @@ const RegisterPage = () => {
             label="Username"
             value={form.username}
             onChange={handleChange}
+            required
             error={!!errors.username}
             helperText={errors.username}
             sx={{ mb: 2 }}
@@ -207,6 +209,7 @@ const RegisterPage = () => {
             type="email"
             value={form.email}
             onChange={handleChange}
+            required
             error={!!errors.email}
             helperText={errors.email}
             sx={{ mb: 2 }}
@@ -219,6 +222,7 @@ const RegisterPage = () => {
             type="password"
             value={form.password}
             onChange={handleChange}
+            required
             error={!!errors.password}
             helperText={errors.password}
             sx={{ mb: 3 }}
